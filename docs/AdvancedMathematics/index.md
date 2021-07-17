@@ -10,7 +10,31 @@ This is English Test.This is English Test.This is English Test.This is English T
 
 > 重点标记测试
 
-行内公式测试：
+公式测试：
+
+$$y(n)=(f\ast g)(n)=\sum_{\tau =\infty}^{\infty}f(\tau )g(n-\tau )d\tau $$
+
+$$\begin{bmatrix}
+1& 2& 3\\ 
+4& 5& 6\\ 
+7& 8& 9
+\end{bmatrix}\Rightarrow \begin{bmatrix}
+3& 2& 1\\ 
+6& 5& 4\\ 
+9& 8& 7
+\end{bmatrix}\Rightarrow \begin{bmatrix}
+9& 8& 7\\ 
+6& 5& 4\\ 
+3& 2& 1
+\end{bmatrix}$$
+
+\begin{align}
+\sqrt{37} & = \sqrt{ \frac{73^2-1}{12^2}} \\
+& = \sqrt{ \frac{73^2}{12^2} \cdot \frac{73^2-1}{73^2}} \\ 
+& = \sqrt{ \frac{73^2}{12^2}}\sqrt{ \frac{73^2-1}{73^2}} \\
+& = \frac{73}{12} \sqrt{1 - \frac{1}{73^2}} \\ 
+& \approx \frac{73}{12} \left(1 - \frac{1}{2 \cdot73^2} \right)
+\end{align}
 
 $$
 \begin{align}
