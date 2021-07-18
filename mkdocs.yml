@@ -68,6 +68,7 @@ extra:
       link: https://github.com/relifes
   search:
     language: 'jp'
+  disqus: ''
 
 # Extensions
 markdown_extensions:
