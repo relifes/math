@@ -14,7 +14,8 @@ This is English Test.This is English Test.This is English Test.This is English T
 
 $$y(n)=(f\ast g)(n)=\sum_{\tau =\infty}^{\infty}f(\tau )g(n-\tau )d\tau $$
 
-$$\begin{bmatrix}
+$$
+\begin{bmatrix}
 1& 2& 3\\ 
 4& 5& 6\\ 
 7& 8& 9
@@ -26,15 +27,8 @@ $$\begin{bmatrix}
 9& 8& 7\\ 
 6& 5& 4\\ 
 3& 2& 1
-\end{bmatrix}$$
-
-\begin{align}
-\sqrt{37} & = \sqrt{ \frac{73^2-1}{12^2}} \\
-& = \sqrt{ \frac{73^2}{12^2} \cdot \frac{73^2-1}{73^2}} \\ 
-& = \sqrt{ \frac{73^2}{12^2}}\sqrt{ \frac{73^2-1}{73^2}} \\
-& = \frac{73}{12} \sqrt{1 - \frac{1}{73^2}} \\ 
-& \approx \frac{73}{12} \left(1 - \frac{1}{2 \cdot73^2} \right)
-\end{align}
+\end{bmatrix}
+$$
 
 $$
 \begin{align}
@@ -49,7 +43,6 @@ $$
 The homomorphism $f$ is injective if and only if its kernel is only the 
 singleton set $e_G$, because otherwise $\exists a,b\in G$ with $a\neq b$ such 
 that $f(a)=f(b)$.
-
 
 
 
