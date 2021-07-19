@@ -360,6 +360,20 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    题目模板
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#markdown" class="md-nav__link">
+    题目MarkDown模板
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -462,6 +476,20 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    题目模板
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#markdown" class="md-nav__link">
+    题目MarkDown模板
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -495,7 +523,7 @@
 <li>自习室 <strong>1 - 215</strong> 号座位</li>
 <li>在 <strong>github</strong> 上直接对本项目提交 <strong>PR</strong></li>
 </ul>
-<p>题目提交模板如下所示：</p>
+<h2 id="_4">题目模板<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
 <hr />
 <p><strong>题目来源：</strong> 武钟祥 - 《高等数学辅导讲义》P53 例2</p>
 <p><strong>题目：</strong> 设 <span class="arithmatex">\(f(0) = 0\)</span>，则 <span class="arithmatex">\(f(x)\)</span> 在点 <span class="arithmatex">\(x=0\)</span> 可导的 <strong>充要条件</strong> 为：</p>
@@ -503,9 +531,7 @@
 <p>（B）<span class="arithmatex">\(\lim\limits_{h \to 0} {\cfrac{1}{h}f(1-e^h) }\)</span> 存在</p>
 <p>（C）<span class="arithmatex">\(\lim\limits_{h \to 0} {\cfrac{1}{h^2}f(h-\sin h) }\)</span> 存在</p>
 <p>（D）<span class="arithmatex">\(\lim\limits_{h \to 0} {\cfrac{1}{h}  \left [ f(2h) - f(h) \right ]}\)</span> 存在</p>
-<div class="admonition note">
-<p class="admonition-title">答案与解析</p>
-<p>答案：B</p>
+<details class="note"><summary>答案与解析</summary><p>答案：B</p>
 <div class="tabbed-set" data-tabs="1:4"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><label for="__tabbed_1_1">A选项</label><div class="tabbed-content">
 <div class="arithmatex">\[\begin{align}\lim_{h \to 0}\cfrac{f(1-\cos h)}{h^2} &amp;= \lim_{h \to 0}\cfrac{f(1-\cos h) - f(0)}{1-\cos h}\cdot \cfrac{1-\cos h}{h^2}\\&amp;= \cfrac{1}{2}\lim_{h \to 0}\cfrac{f(1-\cos h) - f(0)} {1-\cos h}=\cfrac{1}{2}f'_+(0).\end{align}\]</div>
 <p>由于当 <span class="arithmatex">\(h \to 0\)</span> 时，<span class="arithmatex">\((1-\cos h) \to 0^+\)</span>，则只能推出右导数存在，故A不正确。</p>
@@ -519,12 +545,85 @@
 </div>
 <input id="__tabbed_1_4" name="__tabbed_1" type="radio" /><label for="__tabbed_1_4">D选项</label><div class="tabbed-content">
 <p>D选择错误类型与其他选项不同，<span class="arithmatex">\(f(2h)-f(h)\)</span> 是两个动点，不符合导数定义。反例如下：</p>
-<p>取<span class="arithmatex">\(f(x) = \left\{\begin{matrix} 1 ,x \ne 0\\  0 , x = 0 \end{matrix}\right.\)</span>,显然 <span class="arithmatex">\(f'(0)\)</span> 不存在，因为 <span class="arithmatex">\(f(x)\)</span> 在 <span class="arithmatex">\(x = 0\)</span> 处不连续，但该极限存在。</p>
+<p>取<span class="arithmatex">\(f(x) = \left\{\begin{matrix} 1 ,x \ne 0\\  0 , x = 0 \end{matrix}\right.\)</span>，显然 <span class="arithmatex">\(f'(0)\)</span> 不存在，因为 <span class="arithmatex">\(f(x)\)</span> 在 <span class="arithmatex">\(x = 0\)</span> 处不连续，但该极限存在。</p>
 </div>
 </div>
-</div>
-<details class="danger"><summary>总结</summary></details>
+</details>
+<details class="danger"><summary>总结</summary><p><span class="arithmatex">\(f'(x_0)\)</span> 存在 <span class="arithmatex">\(\to  \lim \dfrac{f(x_0 + \Box )-f(x_0)}{\Box}\)</span> 存在</p>
+<ol>
+<li><span class="arithmatex">\(\Box \to 0\)</span></li>
+<li><span class="arithmatex">\(\Box \ne 0\)</span></li>
+</ol>
+<p><span class="arithmatex">\(\lim \dfrac{f(x_0 + \Box )-f(x_0)}{\Box}\)</span> 存在 <span class="arithmatex">\(\to f'(x_0)\)</span> 存在</p>
+<ol>
+<li><span class="arithmatex">\(\Box \to 0\)</span></li>
+<li><span class="arithmatex">\(\Box \ne 0\)</span></li>
+<li><span class="arithmatex">\(\Box\)</span> 可正可负</li>
+</ol>
+<p><span class="arithmatex">\(\lim\limits_{h \to 0} \dfrac{f(\varphi(h))-f(0)}{\psi(h)}\)</span> 存在 <span class="arithmatex">\(\to f'(0)\)</span> 存在</p>
+<ol>
+<li><span class="arithmatex">\(\varphi(x) \to 0，\varphi(x) \ne 0\)</span></li>
+<li><span class="arithmatex">\(\varphi(x)\)</span> 可正可负</li>
+<li><span class="arithmatex">\(\varphi(x)\)</span> 与 <span class="arithmatex">\(\psi(x)\)</span> 同阶</li>
+</ol>
+</details>
 <hr />
+<h2 id="markdown">题目MarkDown模板<a class="headerlink" href="#markdown" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><span class="gs">**题目来源：**</span> 武钟祥 - 《高等数学辅导讲义》P53 例2
+
+<span class="gs">**题目：**</span> 设 $f(0) = 0$，则 $f(x)$ 在点 $x=0$ 可导的 <span class="gs">**充要条件**</span> 为：
+
+（A）$\lim\limits_{h \to 0} {\cfrac{1}{h^2}f(1-\cos h) }$ 存在
+
+（B）$\lim\limits_{h \to 0} {\cfrac{1}{h}f(1-e^h) }$ 存在
+
+（C）$\lim\limits_{h \to 0} {\cfrac{1}{h^2}f(h-\sin h) }$ 存在
+
+（D）$\lim\limits_{h \to 0} {\cfrac{1}{h}  \left [ f(2h) - f(h) \right ]}$ 存在
+
+??? note &quot;答案与解析&quot;
+    答案：B
+
+    === &quot;A选项&quot;
+
+        $$\begin{align}\lim_{h \to 0}\cfrac{f(1-\cos h)}{h^2} &amp;= \lim_{h \to 0}\cfrac{f(1-\cos h) - f(0)}{1-\cos h}\cdot \cfrac{1-\cos h}{h^2}\\&amp;= \cfrac{1}{2}\lim_{h \to 0}\cfrac{f(1-\cos h) - f(0)} {1-\cos h}=\cfrac{1}{2}f&#39;_+(0).\end{align}$$
+
+        由于当 $h \to 0$ 时，$(1-\cos h) \to 0^+$，则只能推出右导数存在，故A不正确。
+
+    === &quot;B选项&quot;
+        $$\begin{align}\lim_{h \to 0} \cfrac{1}{h}f(1-e^h)  &amp;= \lim <span class="ge">_{h \to 0}\cfrac{f(1-e^h)-f(0)}{1-e^h}\cdot \cfrac{1-e^h}{h}\\&amp;= -\lim _</span>{h \to 0} \cfrac{f(1-e^h)-f(0)}{1-e^h} = -f&#39;(0).\end{align}$$
+
+    === &quot;C选项&quot;
+        $$\begin{align}\lim_{h \to 0} \cfrac{1}{h^2}f(h-\sin h) &amp;=\lim_{h \to 0} \cfrac{f(h-\sin h) - f(0)}{h - \sin h}\cdot \cfrac{h-\sin h}{h^2}.\end{align}$$
+
+        由于 $\lim\limits_{h \to 0} \dfrac{h-\sin h}{h^2} = 0$，极限C存在时， $\lim\limits_{h \to 0}\dfrac{f(h-\sin h) - f(0)}{h - \sin h}$ 不一定存在，故C选项错误
+
+    === &quot;D选项&quot;
+        D选择错误类型与其他选项不同，$f(2h)-f(h)$ 是两个动点，不符合导数定义。反例如下：
+
+        取$f(x) = \left\{\begin{matrix} 1 ,x \ne 0\\  0 , x = 0 \end{matrix}\right.$，显然 $f&#39;(0)$ 不存在，因为 $f(x)$ 在 $x = 0$ 处不连续，但该极限存在。
+
+??? danger &quot;总结&quot;
+
+    $f&#39;(x_0)$ 存在 $\to  \lim \dfrac{f(x_0 + \Box )-f(x_0)}{\Box}$ 存在
+
+    <span class="k">1.</span> $\Box \to 0$
+    <span class="k">2.</span> $\Box \ne 0$
+
+    $\lim \dfrac{f(x_0 + \Box )-f(x_0)}{\Box}$ 存在 $\to f&#39;(x_0)$ 存在
+
+    <span class="k">1.</span> $\Box \to 0$
+    <span class="k">2.</span> $\Box \ne 0$
+    <span class="k">3.</span> $\Box$ 可正可负
+
+    $\lim\limits_{h \to 0} \dfrac{f(\varphi(h))-f(0)}{\psi(h)}$ 存在 $\to f&#39;(0)$ 存在
+
+    <span class="k">1.</span> $\varphi(x) \to 0，\varphi(x) \ne 0$
+    <span class="k">2.</span> $\varphi(x)$ 可正可负
+    <span class="k">3.</span> $\varphi(x)$ 与 $\psi(x)$ 同阶
+
+---
+</code></pre></div>
                 
               
               
