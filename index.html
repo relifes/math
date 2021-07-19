@@ -507,46 +507,24 @@
 <p class="admonition-title">答案与解析</p>
 <p>答案：B</p>
 <div class="tabbed-set" data-tabs="1:4"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><label for="__tabbed_1_1">A选项</label><div class="tabbed-content">
-<div class="arithmatex">\[
-\begin{align}\lim_{h \to 0}\cfrac{f(1-\cos h)}{h^2} &amp;= \lim_{h \to 0}\cfrac{f(1-\cos h) - f(0)}{1-\cos h}\cdot \cfrac{1-\cos h}{h^2}\\&amp;= \cfrac{1}{2}\lim_{h \to 0}\cfrac{f(1-\cos h) - f(0)} {1-\cos h}=\cfrac{1}{2}f'_+(0).\end{align}
-\]</div>
+<div class="arithmatex">\[\begin{align}\lim_{h \to 0}\cfrac{f(1-\cos h)}{h^2} &amp;= \lim_{h \to 0}\cfrac{f(1-\cos h) - f(0)}{1-\cos h}\cdot \cfrac{1-\cos h}{h^2}\\&amp;= \cfrac{1}{2}\lim_{h \to 0}\cfrac{f(1-\cos h) - f(0)} {1-\cos h}=\cfrac{1}{2}f'_+(0).\end{align}\]</div>
 <p>由于当 <span class="arithmatex">\(h \to 0\)</span> 时，<span class="arithmatex">\((1-\cos h) \to 0^+\)</span>，则只能推出右导数存在，故A不正确。</p>
 </div>
 <input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><label for="__tabbed_1_2">B选项</label><div class="tabbed-content">
-<div class="arithmatex">\[
-\begin{align}\lim_{h \to 0}\cfrac{f(1-\cos h)}{h^2} &amp;= \lim_{h \to 0}\cfrac{f(1-\cos h) - f(0)}{1-\cos h}\cdot \cfrac{1-\cos h}{h^2}\\&amp;= \cfrac{1}{2}\lim_{h \to 0}\cfrac{f(1-\cos h) - f(0)} {1-\cos h}=\cfrac{1}{2}f'_+(0).\end{align}
-\]</div>
-<p>由于当 <span class="arithmatex">\(h \to 0\)</span> 时，<span class="arithmatex">\((1-\cos h) \to 0^+\)</span>，则只能推出右导数存在，故A不正确。</p>
+<div class="arithmatex">\[\begin{align}\lim_{h \to 0} \cfrac{1}{h}f(1-e^h)  &amp;= \lim _{h \to 0}\cfrac{f(1-e^h)-f(0)}{1-e^h}\cdot \cfrac{1-e^h}{h}\\&amp;= -\lim _{h \to 0} \cfrac{f(1-e^h)-f(0)}{1-e^h} = -f'(0).\end{align}\]</div>
 </div>
 <input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><label for="__tabbed_1_3">C选项</label><div class="tabbed-content">
-<div class="arithmatex">\[
-\begin{align}
-\lim_{h \to 0} \cfrac{1}{h^2}f(h-\sin h) &amp;=\lim_{h \to 0} \cfrac{f(h-\sin h) - f(0)}{h - \sin h}\cdot \cfrac{h-\sin h}{h^2}.\end{align}
-\]</div>
+<div class="arithmatex">\[\begin{align}\lim_{h \to 0} \cfrac{1}{h^2}f(h-\sin h) &amp;=\lim_{h \to 0} \cfrac{f(h-\sin h) - f(0)}{h - \sin h}\cdot \cfrac{h-\sin h}{h^2}.\end{align}\]</div>
 <p>由于 <span class="arithmatex">\(\lim\limits_{h \to 0} \dfrac{h-\sin h}{h^2} = 0\)</span>，极限C存在时， <span class="arithmatex">\(\lim\limits_{h \to 0}\dfrac{f(h-\sin h) - f(0)}{h - \sin h}\)</span> 不一定存在，故C选项错误</p>
 </div>
 <input id="__tabbed_1_4" name="__tabbed_1" type="radio" /><label for="__tabbed_1_4">D选项</label><div class="tabbed-content">
 <p>D选择错误类型与其他选项不同，<span class="arithmatex">\(f(2h)-f(h)\)</span> 是两个动点，不符合导数定义。反例如下：</p>
-<p>取
-<span class="arithmatex">\(f(x) = \left\{\begin{matrix} 
-1 ,x \ne 0\\  
- 0 , x = 0 
-\end{matrix}\right.\)</span>
-,显然 <span class="arithmatex">\(f'(0)\)</span> 不存在，因为 <span class="arithmatex">\(f(x)\)</span> 在 <span class="arithmatex">\(x = 0\)</span> 处不连续，但该极限存在。</p>
+<p>取<span class="arithmatex">\(f(x) = \left\{\begin{matrix} 1 ,x \ne 0\\  0 , x = 0 \end{matrix}\right.\)</span>,显然 <span class="arithmatex">\(f'(0)\)</span> 不存在，因为 <span class="arithmatex">\(f(x)\)</span> 在 <span class="arithmatex">\(x = 0\)</span> 处不连续，但该极限存在。</p>
 </div>
 </div>
 </div>
-<p>​    </p>
 <details class="danger"><summary>总结</summary></details>
-<details class="example"><summary>其他相似题目</summary><ol>
-<li>xxxx</li>
-<li>xxxx</li>
-</ol>
-</details>
 <hr />
-<div class="arithmatex">\[
-\begin{align}\lim_{h \to 0} \cfrac{1}{h}f(1-e^h)  &amp;= \lim _{h \to 0}\cfrac{f(1-e^h)-f(0)}{1-e^h}\cdot \cfrac{1-e^h}{h}\\&amp;= -\lim _{h \to 0} \cfrac{f(1-e^h)-f(0)}{1-e^h} = -f'(0).\end{align}
-\]</div>
                 
               
               
