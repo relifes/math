@@ -80,11 +80,9 @@ that $f(a)=f(b)$.
 
 分组其他内容
 
-=== "Unordered list"
+=== "A选项"
 
-    * Sed sagittis eleifend rutrum
-    * Donec vitae suscipit est
-    * Nulla tempor lobortis orci
+    $\begin{align}\lim_{h \to 0}\cfrac{f(1-\cos h)}{h^2} &= \lim_{h \to 0}\cfrac{f(1-\cos h) - f(0)}{1-\cos h}\cdot \cfrac{1-\cos h}{h^2}\\&= \cfrac{1}{2}\lim_{h \to 0}\cfrac{f(1-\cos h) - f(0)} {1-\cos h}=\cfrac{1}{2}f'_+(0).\end{align}$
 
 === "Ordered list"
 

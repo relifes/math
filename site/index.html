@@ -503,18 +503,27 @@
 <p>（B）<span class="arithmatex">\(\lim\limits_{h \to 0} {\cfrac{1}{h}f(1-e^h) }\)</span> 存在</p>
 <p>（C）<span class="arithmatex">\(\lim\limits_{h \to 0} {\cfrac{1}{h^2}f(h-\sin h) }\)</span> 存在</p>
 <p>（D）<span class="arithmatex">\(\lim\limits_{h \to 0} {\cfrac{1}{h}  \left [ f(2h) - f(h) \right ]}\)</span> 存在</p>
-<details class="note"><summary>答案与解析</summary><p>答案：B</p>
-<ul>
-<li>A选项</li>
-</ul>
-<p><span class="arithmatex">\(\begin{align}\lim_{h \to 0}\cfrac{f(1-\cos h)}{h^2} &amp;= \lim_{h \to 0}\cfrac{f(1-\cos h) - f(0)}{1-\cos h}\cdot \cfrac{1-\cos h}{h^2}\\&amp;= \cfrac{1}{2}\lim_{h \to 0}\cfrac{f(1-\cos h) - f(0)} {1-\cos h}=\cfrac{1}{2}f'_+(0).\end{align}\)</span></p>
-</details>
+<div class="admonition note">
+<p class="admonition-title">答案与解析</p>
+<p>答案：B</p>
+<div class="tabbed-set" data-tabs="1:4"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><label for="__tabbed_1_1">A选项</label><div class="tabbed-content">
+<div class="arithmatex">\[\begin{align}\lim_{h \to 0}\cfrac{f(1-\cos h)}{h^2} &amp;= \lim_{h \to 0}\cfrac{f(1-\cos h) - f(0)}{1-\cos h}\cdot \cfrac{1-\cos h}{h^2}\\&amp;= \cfrac{1}{2}\lim_{h \to 0}\cfrac{f(1-\cos h) - f(0)} {1-\cos h}=\cfrac{1}{2}f'_+(0).\end{align}\]</div>
+<p>由于当 <span class="arithmatex">\(h \to 0\)</span> 时，<span class="arithmatex">\((1-\cos h) \to 0^+\)</span>，则只能推出右导数存在，故A不正确。</p>
+</div>
+<input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><label for="__tabbed_1_2">B选项</label><div class="tabbed-content">
+<div class="arithmatex">\[\begin{align}\lim_{h \to 0} \cfrac{1}{h}f(1-e^h)  &amp;= \lim _{h \to 0}\cfrac{f(1-e^h)-f(0)}{1-e^h}\cdot \cfrac{1-e^h}{h}\\&amp;= -\lim _{h \to 0} \cfrac{f(1-e^h)-f(0)}{1-e^h} = -f'(0).\end{align}\]</div>
+</div>
+<input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><label for="__tabbed_1_3">C选项</label><div class="tabbed-content">
+<div class="arithmatex">\[\begin{align}\lim_{h \to 0} \cfrac{1}{h^2}f(h-\sin h) &amp;=\lim_{h \to 0} \cfrac{f(h-\sin h) - f(0)}{h - \sin h}\cdot \cfrac{h-\sin h}{h^2}.\end{align}\]</div>
+<p>由于 <span class="arithmatex">\(\lim\limits_{h \to 0} \dfrac{h-\sin h}{h^2} = 0\)</span>，极限C存在时， <span class="arithmatex">\(\lim\limits_{h \to 0}\dfrac{f(h-\sin h) - f(0)}{h - \sin h}\)</span> 不一定存在，故C选项错误</p>
+</div>
+<input id="__tabbed_1_4" name="__tabbed_1" type="radio" /><label for="__tabbed_1_4">D选项</label><div class="tabbed-content">
+<p>D选择错误类型与其他选项不同，<span class="arithmatex">\(f(2h)-f(h)\)</span> 是两个动点，不符合导数定义。反例如下：</p>
+<p>取<span class="arithmatex">\(f(x) = \left\{\begin{matrix} 1 ,x \ne 0\\  0 , x = 0 \end{matrix}\right.\)</span>,显然 <span class="arithmatex">\(f'(0)\)</span> 不存在，因为 <span class="arithmatex">\(f(x)\)</span> 在 <span class="arithmatex">\(x = 0\)</span> 处不连续，但该极限存在。</p>
+</div>
+</div>
+</div>
 <details class="danger"><summary>总结</summary></details>
-<details class="example"><summary>其他相似题目</summary><ol>
-<li>xxxx</li>
-<li>xxxx</li>
-</ol>
-</details>
 <hr />
                 
               
@@ -609,7 +618,7 @@
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": ".", "features": ["content.tabs.link", "navigation.instant", "navigation.sections", "navigation.tabs", "navigation.expand", "navigation.top", "navigation.tracking", "search.suggest"], "translations": {"clipboard.copy": "\u590d\u5236", "clipboard.copied": "\u5df2\u590d\u5236", "search.config.lang": "ja", "search.config.pipeline": "trimmer, stemmer", "search.config.separator": "[\\uff0c\\u3002]+", "search.placeholder": "\u641c\u7d22", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "assets/javascripts/workers/search.477d984a.min.js", "version": null}</script>
+    <script id="__config" type="application/json">{"base": ".", "features": ["content.tabs.link", "navigation.sections", "navigation.tabs", "navigation.expand", "navigation.top", "navigation.tracking"], "translations": {"clipboard.copy": "\u590d\u5236", "clipboard.copied": "\u5df2\u590d\u5236", "search.config.lang": "ja", "search.config.pipeline": "trimmer, stemmer", "search.config.separator": "[\\uff0c\\u3002]+", "search.placeholder": "\u641c\u7d22", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "assets/javascripts/workers/search.477d984a.min.js", "version": null}</script>
     
     
       <script src="assets/javascripts/bundle.ddd52ceb.min.js"></script>
