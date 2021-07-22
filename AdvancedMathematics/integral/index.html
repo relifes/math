@@ -463,9 +463,7 @@
 <h2 id="_2">不定积分的计算<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
 <hr />
 <p>关于 <span class="arithmatex">\(\int \sqrt []{1+x^2}\mathrm{d}x\)</span> 的多种计算方法</p>
-<div class="admonition note">
-<p class="admonition-title">答案与解析</p>
-<div class="tabbed-set" data-tabs="1:3"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><label for="__tabbed_1_1">解法一</label><div class="tabbed-content">
+<details class="note"><summary>答案与解析</summary><div class="tabbed-set" data-tabs="1:3"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><label for="__tabbed_1_1">解法一</label><div class="tabbed-content">
 <p>令 <span class="arithmatex">\(x=\tan \theta, \theta \in (-\cfrac{\pi}{2},\cfrac{\pi}{2})\)</span></p>
 <div class="arithmatex">\[\begin{array}{l}&amp;\int \sqrt[]{1+x^2}\mathrm{d}x \\&amp;= \int \cfrac{1}{\cos^3 \theta}\mathrm{d}x=\int \cfrac{\cos \theta }{\cos ^4\theta }\mathrm{d}x=\int \cfrac{\mathrm{d}\sin \theta  }{(1-\sin ^2 \theta )^2}\\&amp;= \cfrac{1}{4}\int \left[ -\cfrac{1}{\sin \theta -1} +\cfrac{1}{(\sin \theta -1)^2} +\cfrac{1}{\sin \theta +1} +\cfrac{1}{(\sin \theta +1)^2} \right] \mathrm{d}\sin\theta \\&amp;= \cfrac{1}{4} \left( -\ln_{}{(1-\sin \theta )} -\cfrac{1}{\sin \theta -1} +\ln_{}{ (\sin \theta +1)} - \cfrac{1}{\sin \theta +1} \right ) + C\\&amp;= \cfrac{1}{4} \left( \ln _{}{\cfrac{\sin \theta +1}{1-\sin \theta }} - \cfrac{2\sin \theta }{\sin ^2 \theta -1}\right ) + C\\&amp;= \cfrac{1}{4} \left (  \ln _{}{\cfrac{\cfrac{x}{\sqrt[]{1+x^2}+1}}{1-\cfrac{x}{\sqrt[]{1+x^2}}} } + 2x\sqrt[]{1+x^2} \right ) +C\\&amp;= \cfrac{1}{2} \ln_{}{(x+\sqrt[]{x^2+1})} + \cfrac{1}{2}x\sqrt[]{1+x^2} +C.   \end{array}\]</div>
 </div>
@@ -477,7 +475,7 @@
 <div class="arithmatex">\[\begin{array}{l}I&amp;=\int \cfrac{1}{\cos ^3 \theta }\mathrm{d}x=\int(\tan ^2 \theta +1)\sec \theta \mathrm{d}\theta \\&amp;= \int \tan ^2 \theta \sec \theta \mathrm{d}\theta +\int \sec \theta \mathrm{d}\theta \\&amp;= \int \tan \theta \mathrm{d}\sec \theta +\int \sec \theta \mathrm{d}\theta \\&amp;= \tan \theta \sec \theta - \int \sec ^3\theta \mathrm{d}\theta +\ln {\left | \sec \theta +\tan \theta \right |}\\\therefore I &amp;= \cfrac{1}{2} \tan \theta \sec \theta +\cfrac{1}{2} \ln {\left | \sec \theta +\tan \theta \right |}\\&amp;= \cfrac{1}{2} x\sqrt[]{1+x^2} + \cfrac{1}{2}\ln_{}{(x+\sqrt[]{x^2+1})} +C.\end{array}\]</div>
 </div>
 </div>
-</div>
+</details>
                 
               
               
