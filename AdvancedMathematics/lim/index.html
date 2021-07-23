@@ -383,6 +383,20 @@
       
         <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
+    极限计算
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    数列极限
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
     间断点及其类型
   </a>
   
@@ -441,6 +455,20 @@
       
         <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
+    极限计算
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    数列极限
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
     间断点及其类型
   </a>
   
@@ -460,9 +488,29 @@
                 
                 
                 <h1 id="_1">函数，极限，连续<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
-<h2 id="_2">间断点及其类型<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<h2 id="_2">极限计算<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
 <hr />
-<p><strong>题目来源：</strong> 武钟祥 - 《高等数学辅导讲义 严选题》P3 T2</p>
+<p><strong>题目来源：</strong> 武钟祥 - 《高等数学辅导讲义 严选题》P3 T22</p>
+<p><strong>题目：</strong> 极限 <span class="arithmatex">\(\lim\limits_{x \to 0} \left [ \cfrac{1}{\ln {(x+\sqrt[]{1+x^2} )}}- \cfrac{1}{\ln{(1+x)}}  \right ] =\)</span></p>
+<details class="note"><summary>答案与解析</summary><div class="arithmatex">\[\begin{align}
+\text{原式} &amp;=  \lim_{x \to 0} \cfrac{\ln{(1+x)-\ln{(x+\sqrt[]{1+x^2} )}}}{\ln{(1+x)}\ln {(x+\sqrt[]{1+x^2} )}}\\
+&amp;= \lim_{x \to 0} \cfrac{\ln{(1+x)-\ln{(x+\sqrt[]{1+x^2} )}}}{x^2}\text{这里} (\ln{(x+\sqrt[]{1+x^2})\sim x })\\
+&amp;= \lim_{x \to 0} \cfrac{\cfrac{1}{\xi} (1+x-x-\sqrt[]{1+x^2} )}{x^2}  ( \xi\text{在}1+x\text{与}x+\sqrt[]{1+x^2}\text{之间} )\\
+&amp;= \lim_{x \to 0} \cfrac{-\cfrac{1}{2}x^2 }{x^2} = -\cfrac{1}{2}  
+\end{align}\]</div>
+</details>
+<hr />
+<h2 id="_3">数列极限<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<hr />
+<p><strong>题目来源：</strong> 武钟祥 - 《高等数学辅导讲义 严选题》P4 T26</p>
+<p><strong>题目：</strong> 极限 <span class="arithmatex">\(\lim\limits_{n \to \infty}\cfrac{\sqrt{1}+\sqrt{2}+\cdots+\sqrt{n}}{\sqrt{n(1+2+\cdots+n)}}=\)</span></p>
+<details class="note"><summary>答案与解析</summary><p>夹逼不出来，考虑定积分定义</p>
+<div class="arithmatex">\[\begin{align}\text{原式} &amp;= \lim_{n \to \infty }\cfrac{\sqrt[]{1}+\sqrt[]{2}+\cdots +\sqrt[]{n}}{\sqrt[]{\dfrac{n^2(n+1)}{2}}} \\&amp;= \sqrt[]{2}\lim_{n \to \infty }\sqrt[]{\frac{n}{n+1}}\cdot    \cfrac{1}{n}  \sum_{k=1}^{k}\sqrt[]{\frac{k}{n}} \\&amp;= \sqrt[]{2}\int_{0}^{1}\sqrt[]{x}\mathrm{d}x=\cfrac{3\sqrt[]{2} }{3}      \end{align}\]</div>
+</details>
+<hr />
+<h2 id="_4">间断点及其类型<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
+<hr />
+<p><strong>题目来源：</strong> 武钟祥 - 《高等数学辅导讲义 严选题》P3 T18</p>
 <p><strong>题目：</strong> 设 <span class="arithmatex">\(f(x) = \lim\limits_{n \to \infty} \dfrac{2e^{(n+1)x}+1}{e^{nx}+x^n+1}\)</span>，则 <span class="arithmatex">\(f(x)\)</span></p>
 <p>（A）仅有一个可去间断点</p>
 <p>（B）仅有一个跳跃间断点</p>
